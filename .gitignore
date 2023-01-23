@@ -1,2 +1,7 @@
 _git_push
 git_push
+criterion.pt
+history.json
+optimizer.pt
+params.pt
+cats_and_dogs_small
