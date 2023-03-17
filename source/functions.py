@@ -78,7 +78,7 @@ def get_model_parameters(model, feature_extract):
                 print("\t",name)
     return params_to_update
 
-def train_model(model, dataloaders, criterion, optimizer, device, num_epochs=25, is_inception=False):
+def train_model(model, dataloaders, criterion, optimizer, device, num_epochs=25, is_inception=False, early_stop=None):
     model = model.to(device)
     since = time.time()
 
@@ -141,6 +141,12 @@ def train_model(model, dataloaders, criterion, optimizer, device, num_epochs=25,
             epoch_acc = running_corrects.double() / len(dataloaders[phase].dataset)
 
             print('{} Loss: {:.4f} Acc: {:.4f}'.format(phase, epoch_loss, epoch_acc))
+            if (phase == 'val') and (early_stop is not None):
+                early_stop(epoch_loss, model)
+                if early_stop.early_stop:
+                    print("Early stopping")
+                    break
+                
 
             # deep copy the model
             if phase == 'val' and epoch_acc > best_acc:
