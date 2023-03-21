@@ -8,15 +8,9 @@ from torch import nn
 class GradCamModel(nn.Module):
     def __init__(self, conv:nn.Sequential, classifier:nn.Sequential):
         super().__init__()
-        # self.model = copy.deepcopy(model)
-        # self.conv = nn.Sequential(self.model.conv1, self.model.bn1, self.model.relu, self.model.maxpool,
-        #              self.model.layer1, self.model.layer2, self.model.layer3, self.model.layer4)
-        # self.avg = self.model.avgpool
-        # self.fc = self.model.fc
         self.conv = conv
         self.classifier = classifier # 수정
-
-
+        
         # placeholder for gradients
         self.gradient = None
 
@@ -35,10 +29,6 @@ class GradCamModel(nn.Module):
         h = x.register_hook(self.activations_hook)
 
         # apply remaining layers
-        # x = self.avg(x)
-        # # flatten
-        # x = x.view((1, -1))
-        # x = self.fc(x)
         x = self.classifier(x)
         self.prediction = x.argmax()
         self.logits = x
