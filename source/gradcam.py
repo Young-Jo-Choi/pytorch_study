@@ -6,7 +6,7 @@ from torch import nn
 
 
 class GradCamModel(nn.Module):
-    def __init__(self, conv:nn.Sequential, classifier:nn.Sequential):
+    def __init__(self, conv : nn.Sequential, classifier : nn.Sequential):
         super().__init__()
         self.conv = conv
         self.classifier = classifier # 수정

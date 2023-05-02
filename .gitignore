@@ -8,3 +8,7 @@ cats_and_dogs_small
 Korean_movie_reviews_2016.txt
 temp.pt
 checkpoint.pt
+X_train.csv
+X_test.csv
+y_train.csv
+y_test.csv
