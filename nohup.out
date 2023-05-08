@@ -1,1 +1,120 @@
 python: can't open file 'main_coco.py': [Errno 2] No such file or directory
+Files already downloaded and verified
+Files already downloaded and verified
+epoch : 0
+/home/choiyj/.conda/envs/choi/lib/python3.8/site-packages/torchvision/io/image.py:13: UserWarning: Failed to load image Python extension: '/home/choiyj/.conda/envs/choi/lib/python3.8/site-packages/torchvision/image.so: undefined symbol: _ZN3c104cuda20CUDACachingAllocator9allocatorE'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+/home/choiyj/.conda/envs/choi/lib/python3.8/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/choiyj/.conda/envs/choi/lib/python3.8/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+train loss: 1.1931776411819457, train acc: 0.57936
+val loss: 0.8302250619888306, val acc: 0.7087
+epoch : 1
+train loss: 0.8260541544914246, train acc: 0.71304
+val loss: 0.6954996413230896, val acc: 0.7612
+epoch : 2
+train loss: 0.717285002746582, train acc: 0.75196
+val loss: 0.6191217759132385, val acc: 0.7866
+epoch : 3
+train loss: 0.6433578161239624, train acc: 0.77632
+val loss: 0.5885403120994568, val acc: 0.7977
+epoch : 4
+train loss: 0.5957915057945251, train acc: 0.7933
+val loss: 0.5718020568847656, val acc: 0.8024
+epoch : 5
+train loss: 0.5588195395278931, train acc: 0.80528
+val loss: 0.5637153679847717, val acc: 0.8086
+epoch : 6
+train loss: 0.5279020319366455, train acc: 0.81508
+val loss: 0.5374309930801392, val acc: 0.8142
+epoch : 7
+train loss: 0.5021804765892028, train acc: 0.8257
+val loss: 0.5025971311569214, val acc: 0.8292
+epoch : 8
+train loss: 0.47186822772979736, train acc: 0.83386
+val loss: 0.5367095634460449, val acc: 0.821
+epoch : 9
+train loss: 0.44950718121528627, train acc: 0.84272
+val loss: 0.5005759197235108, val acc: 0.8355
+epoch : 10
+train loss: 0.42862730627059936, train acc: 0.84804
+val loss: 0.49264606456756593, val acc: 0.8337
+epoch : 11
+train loss: 0.4183852467823029, train acc: 0.85292
+val loss: 0.4941544933319092, val acc: 0.837
+epoch : 12
+train loss: 0.3980995258331299, train acc: 0.85866
+val loss: 0.4874981040000915, val acc: 0.8358
+epoch : 13
+train loss: 0.3785178870201111, train acc: 0.86598
+val loss: 0.48321634407043457, val acc: 0.8397
+epoch : 14
+train loss: 0.36684522619247434, train acc: 0.87156
+val loss: 0.49381497678756714, val acc: 0.8421
+epoch : 15
+train loss: 0.35611268936157225, train acc: 0.87202
+val loss: 0.48898723464012145, val acc: 0.839
+epoch : 16
+train loss: 0.34127554350376127, train acc: 0.87912
+val loss: 0.49245215129852293, val acc: 0.8423
+epoch : 17
+train loss: 0.3285634631252289, train acc: 0.88358
+val loss: 0.47641693534851076, val acc: 0.8453
+epoch : 18
+train loss: 0.3164868575668335, train acc: 0.88732
+val loss: 0.4971422117233276, val acc: 0.8389
+epoch : 19
+train loss: 0.30596515911102296, train acc: 0.8914
+val loss: 0.496675123500824, val acc: 0.8429
+epoch : 20
+train loss: 0.29814665908813476, train acc: 0.8942
+val loss: 0.4954065629005432, val acc: 0.8408
+epoch : 21
+train loss: 0.2886386998271942, train acc: 0.8982
+val loss: 0.4896963570594788, val acc: 0.8469
+epoch : 22
+train loss: 0.2780229156589508, train acc: 0.90022
+val loss: 0.5107516918182373, val acc: 0.8446
+epoch : 23
+train loss: 0.26982471903800964, train acc: 0.90222
+val loss: 0.5054973518848419, val acc: 0.8404
+epoch : 24
+train loss: 0.26283950434207914, train acc: 0.90634
+val loss: 0.49570957374572755, val acc: 0.8476
+epoch : 25
+train loss: 0.2536976027107239, train acc: 0.91058
+val loss: 0.5155190357208252, val acc: 0.8454
+epoch : 26
+train loss: 0.2501848274421692, train acc: 0.90926
+val loss: 0.5009720176696777, val acc: 0.8486
+epoch : 27
+train loss: 0.23786270290374756, train acc: 0.91546
+val loss: 0.5042401975631714, val acc: 0.8492
+epoch : 28
+train loss: 0.231990442404747, train acc: 0.91768
+val loss: 0.5040160387039184, val acc: 0.849
+epoch : 29
+train loss: 0.2262555055952072, train acc: 0.91866
+val loss: 0.505229672241211, val acc: 0.8496
+epoch : 30
+train loss: 0.21862586611747742, train acc: 0.92126
+val loss: 0.5150001996040344, val acc: 0.8462
+epoch : 31
+train loss: 0.21230652364730834, train acc: 0.92502
+val loss: 0.5092736981391907, val acc: 0.8507
+epoch : 32
+train loss: 0.20966626042842865, train acc: 0.9242
+val loss: 0.5221304430961609, val acc: 0.847
+epoch : 33
+train loss: 0.2023214712905884, train acc: 0.92786
+val loss: 0.5275501313209534, val acc: 0.8474
+epoch : 34
+train loss: 0.19395119450092316, train acc: 0.93216
+val loss: 0.5340534503936768, val acc: 0.8454
+epoch : 35
+train loss: 0.19284476731777192, train acc: 0.93048
+val loss: 0.5342074301719666, val acc: 0.8507
+epoch : 36
+train loss: 0.1871299162697792, train acc: 0.93366
+val loss: 0.535155502986908, val acc: 0.8432

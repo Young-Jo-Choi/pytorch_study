@@ -1,5 +1,6 @@
 _git_push
 git_push
+cifar10_resnet18.pt
 criterion.pt
 history.json
 optimizer.pt
@@ -7,6 +8,7 @@ params.pt
 cats_and_dogs_small
 Korean_movie_reviews_2016.txt
 temp.pt
+nohup.out
 checkpoint.pt
 X_train.csv
 X_test.csv
