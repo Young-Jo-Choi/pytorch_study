@@ -14,3 +14,6 @@ X_train.csv
 X_test.csv
 y_train.csv
 y_test.csv
+__pycache__
+.ipynb_checkpoints
+temp
